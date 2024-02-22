@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<title>WHAI2024</title>
+	
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Bootstrap 5 Tech Conference Template">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+	<link rel="shortcut icon" href="assets/images/favicon_io/favicon.ico"> 
+	
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:600,700,800|Roboto:300,400,700&display=swap" rel="stylesheet">
+	
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Theme CSS -->  
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+
+</head> 
+
+<body>  
+	<header id="header" class="header fixed-top">	    
+		<div class="branding">
+			<div class="container-fluid">
+				<nav class="main-nav navbar navbar-dark bg-dark navbar-expand-lg">
+					<div class="site-logo"><a class="scrollto" href="#hero-block"><img class="logo-icon" src="assets/images/logo-white.svg" alt="logo"></a></div>    
+					
+					<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="https://www.ecai2024.eu/" target="_blank">Register</a></div>
+					
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div id="navigation" class="navbar-collapse collapse  justify-content-lg-end me-lg-3">
+						<ul class="nav navbar-nav">
+							
+							<li class="nav-item"><a class="nav-link scrollto" href="index.html#about">About</a></li>                                              
+							<li class="nav-item"><a class="nav-link scrollto" href="index.html#speakers-section">PC Members</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="index.html#schedule-section">Schedule</a></li>
+							<li class="nav-item"><a class="nav-link" href="timeline2.html">Timeline</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="index.html#venue-section">Venue</a></li>
+							<li class="nav-item"><a class="nav-link scrollto" href="index.html#sponsors-section">Sponsors</a></li>
+						</ul><!--//nav-->
+					</div><!--//navabr-collapse-->
+
+				</nav><!--//main-nav-->
+				
+			</div><!--//container-->
+		</div><!--//branding-->
+	</header><!--//header-->
+
+
+		
+		<div id="hero-block" class="hero-block" style="width: 100%; height: 600px">
+
+
+	
+
+  <!-- 1 -->
+        <link title="timeline-styles" rel="stylesheet" 
+              href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+        <!-- 2 -->
+        <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+        <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+
+        <!-- 3 -->
+        <script type="text/javascript">
+            // The TL.Timeline constructor takes at least two arguments:
+            // the id of the Timeline container (no '#'), and
+            // the URL to your JSON data file or Google spreadsheet.
+            // the id must refer to an element "above" this code,
+            // and the element must have CSS styling to give it width and height
+            // optionally, a third argument with configuration options can be passed.
+            // See below for more about options.
+            timeline = new TL.Timeline('timeline-embed',
+            'https://docs.google.com/spreadsheets/d/1cWqQBZCkX9GpzFtxCWHoqFXCHg-ylTVUWlnrdYMzKUI/pubhtml');
+        </script>
+
+		</div><!--//hero-block-->
+
+	
+	
+	<!-- Javascript -->          
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+	</script>  
+
+</body>
+</html> 
+
