@@ -19,7 +19,25 @@
 
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+<style>
+    .project-container {
+      display: flex;
+  		justify-content: center;
+  		align-items: center;
+  		height: 150px; /* Ensure the container takes up the full height of its parent */
+    }
 
+    .project-container img {
+      max-height: 140px;
+      max-width: 100%;
+      height: auto;
+      flex: none;
+    }
+    .row.logos {
+    	display: flex;
+    	flex-wrap: wrap;
+    }
+  </style>
 
 </head> 
 
@@ -146,6 +164,22 @@
 		</div><!- -//media-block- ->
 	</section><!- -//about-section- ->
 -->	
+<section id="partner-section" class="sponsors-section section">
+		<div class="container">
+			<h3 class="section-heading text-center mb-3">Project Partners</h3>
+			<div class="row logos justify-content-center">
+    <div class="logo-item col-6 col-md-4 col-lg-2 logo-container">
+      <img src="assets/images/logos/logo-ai4media-negativo.svg" alt="AI4Media Logo">
+    </div>
+    <div class="logo-item col-6 col-md-4 col-lg-2 logo-container">
+      <img src="assets/images/logos/humaneAI.jpeg" alt="Humane Logo">
+    </div>
+  </div>
+		</div><!--//container-->
+	</section><!--//sponsors-section-->
+
+
+
 	<section id="speakers-section" class="speakers-section section">
 		<div class="container">
 			<h3 class="section-heading text-center mb-3">Program Committee</h3>
