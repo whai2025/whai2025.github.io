@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-	<title>WHAI2024</title>
+	<title>WHAI2025</title>
 	
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Workshop on the History of AI in Europe">
-	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+	<meta name="author" content="Cristian Barrué">    
 	<link rel="shortcut icon" href="assets/images/favicon_io/favicon.ico"> 
 	
 	<!-- Google Font -->
@@ -37,6 +37,40 @@
     	display: flex;
     	flex-wrap: wrap;
     }
+    pre {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: Consolas, 'Courier New', monospace;
+            white-space: pre-wrap; /* Ensures the code wraps */
+            word-wrap: break-word; /* Ensures long words break */
+            font-weight: bold; /* Makes the text bold */
+            text-align: left; /* Keeps the text aligned to the left */
+            display: inline-block; /* Makes the block as wide as the content */
+        }
+    }
+    .code-container {
+            display: flex;
+            justify-content: center; /* Center the block horizontally */
+            align-items: center;
+            text-align: center; /* Center the entire block within the page */
+        }
+    /* Keyframe animation to blink */
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    /* Applying the blink animation to the <li> */
+    .blinking {
+        animation: blink 1s infinite;
+    }
+    /* Greyed out item */
+    .greyed {
+        opacity: 0.5; /* Adjust the opacity */
+    }
   </style>
 
 </head> 
@@ -48,7 +82,7 @@
 				<nav class="main-nav navbar navbar-expand-lg">
 					<div class="site-logo"><a class="scrollto" href="#hero-block"><img class="logo-icon" src="assets/images/logo.png" alt="logo"></a></div>    
 					
-					<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="https://easychair.org/my/conference?conf=whaieu2024" target="_blank">Submissions</a></div>
+					<div class="navbar-btn order-lg-2"><a class="btn btn-secondary" href="https://easychair.org/conferences/?conf=cwpecai25" target="_blank">Submissions</a></div>
 					
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -87,7 +121,7 @@
 		<div class="container">
 			<div class="hero-text-block">
 				<h1 class="hero-heading mb-2">Workshop on the History of AI in Europe (WHAI@EU)</h1>
-				<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>20 Oct <i class="fas fa-map-marker-alt mx-2"></i>Santiago de Compostela, Spain</div>
+				<div class="hero-meta mb-3"><i class="far fa-calendar-alt me-2"></i>25-26 Oct<i class="fas fa-map-marker-alt mx-2"></i>Bologna, Italy</div>
 				<!-- div class="hero-intro mb-4">The #1 Bootstrap Template for <br>Tech Conferences and Events.</div>-->
 				<!-- div class="hero-cta"><a class="btn btn-primary btn-lg" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devconf-free-bootstrap-4-conference-template-for-tech-conferences-and-events/" target="_blank">Get Tickets</a></div>-->
 				
@@ -122,25 +156,26 @@
 				<h4 class="text-center mb-4">Contributions Submission</h4>
 				<ul class="list-unstyled text-start d-inline-block">
 					<li><i class="fa-regular fa-newspaper me-2"></i>Invited contributions have to provide a long paper.</li>
-					<li><i class="fa-regular fa-newspaper  me-2"></i>Long papers will be six pages of content and unlimited references in the ECAI 2024 formatting style.</li>
-					<li><i class="fa-regular fa-newspaper  me-2"></i>Extended abstracts will be two pages in ECAI 2024 formatting style.</li>
-					<li><i class="fa-regular fa-newspaper  me-2"></i>Selected papers and invited contributions will be considered for possible inclusion in a special issue of <a target="_blank" rel="noopener noreferrer" href="https://content.iospress.com/journals/ai-communications/Pre-press/Pre-press">AI Communications</a>.</li>
+					<li><i class="fa-regular fa-newspaper  me-2"></i>Long papers will be six pages of content and unlimited references in the ECAI 2025 formatting style.</li>
+					<li><i class="fa-regular fa-newspaper  me-2"></i>Extended abstracts will be two pages in ECAI 2025 formatting style.</li>
+					<li><i class="fa-regular fa-newspaper  me-2"></i>Papers will be published in the workshop proceedings with their own DOI</a>. 
+					</li>
 				</ul>
 			</div><!--//benefits-list-->
 			<div class="benefits-list text-center mb-3">
 				<h4 class="text-center mb-4">Key Dates</h4>
 				<ul class="list-unstyled text-start d-inline-block">
-					<li><i class="fa-regular fa-calendar me-2"></i>Paper submission  June 15, 2024</li>
-					<li><i class="fa-regular fa-calendar me-2"></i>Author notification  July 1, 2024</li>
-					<li><i class="fa-regular fa-calendar me-2"></i>Camera Ready  August 22, 2024</li>
-					<li><i class="fa-regular fa-calendar me-2"></i>Workshop  October 20 (14pm session), 2024</li>
+					<li><i class="fa-regular fa-calendar me-2"></i>Paper submission  May 6, 2025</li>
+					<li><i class="fa-regular fa-calendar me-2"></i>Author notification  July 10, 2025</li>
+					<li><i class="fa-regular fa-calendar me-2"></i>Camera Ready  TBD, 2025</li>
+					<li><i class="fa-regular fa-calendar me-2"></i>Workshop  October 25-26 (TBD), 2025</li>
 				</ul>
 			</div><!--//benefits-list-->
 			<div class="event-countdown text-center mb-3">		   
 				<h4 class="countdown-intro mb-2 text-center mb-3">Event Starts In:</h4>
 				<div id="countdown-box" class="countdown-box"></div>
 			</div><!--//event-countdown-->
-			<div class="about-cta text-center mb-5"><a class="btn btn-secondary btn-lg  mb-5" href="https://easychair.org/my/conference?conf=whaieu2024" target="_blank">Submit your contribution today</a></div>
+			<div class="about-cta text-center mb-5"><a class="btn btn-secondary btn-lg  mb-5" href="https://easychair.org/conferences/?conf=cwpecai25" target="_blank">Submit your contribution today</a></div>
 		</div><!--//container-->
 <!--
 		<div class="media-block theme-bg-primary py-5">
@@ -315,42 +350,8 @@
 						</div>
 					</div><!--//card-->
 				</div><!--//col-->
-				<div class="col-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-#" data-bs-toggle="modal" data-bs-target="#modal-speaker-#"><img src="assets/images/speakers/barry.jpeg" class="card-img-top rounded-0" alt=""></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">Barry O’Sullivan</h5>
-							<div class="card-text mb-3">
-								<div class="meta">University College Cork</div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-#" data-bs-toggle="modal" data-bs-target="#modal-speaker-#">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-								<li class="list-inline-item"><a  href="#"><i class="fab fa-github fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
-				<div class="col-6 col-lg-3 mb-4">
-					<div class="card rounded-0">
-						<a href="#modal-speaker-9" data-bs-toggle="modal" data-bs-target="#modal-speaker-9"><img src="assets/images/speakers/miquel.png" class="card-img-top rounded-0" alt=""></a>
-						<div class="card-body">
-							<h5 class="card-title mb-2">Miquel Sànchez-Marrè</h5>
-							<div class="card-text mb-3">
-								<div class="meta">Universitat Politècnica de Catalunya</div>
-							</div><!--//card-text-->
-							<a href="#modal-speaker-9" data-bs-toggle="modal" data-bs-target="#modal-speaker-9">Read more &rarr;</a>
-						</div><!--//card-->
-						<div class="card-footer text-muted">
-							<ul class="social-list list-inline mb-0">
-									<li class="list-inline-item"><a  href="https://www.linkedin.com/in/miquel-sànchez-marrè-3b72a92/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-							</ul><!--//social-list-->
-						</div>
-					</div><!--//card-->
-				</div><!--//col-->
+				
+
 				<div class="col-6 col-lg-3 mb-4">
 					<div class="card rounded-0">
 						<a href="#modal-speaker-10" data-bs-toggle="modal" data-bs-target="#modal-speaker-10"><img src="assets/images/speakers/steels.jpeg" class="card-img-top rounded-0" alt=""></a>
@@ -589,15 +590,14 @@
 				<div class="col-12 col-lg-7 h-100">
 					<div class="desc">
 						<h4 class="text-white mb-3">How To Get Here</h4>
-						<p>All events that are part of the pre-conference programme will take place in two adjacent buildings located in the North Campus of the University of Santiago de Compostela:
+						<p>ECAI-25 will be held at the University of Bologna (<b>workshop</b> and tutorial days) and in the Bologna Convention Center (main technical program).
 							<ul>
-								<li><a class="text-white mb-3" href="https://maps.app.goo.gl/kyXbmnRDnDeTgZNc6">Faculty of Communication Sciences</a></li>
-								<li><a class="text-white mb-3" href="https://maps.app.goo.gl/uNrRM6TRkyt4M65g6">Faculty of Philology</a></li>
+								<li>University of Bologna - The Engineering School. Get <a class="text-white mb-3" href="https://ecai2025.org/venues/"><b>details</b></a> on how to get there.</a></li>
 							</ul>
 						</p>
 						
 						<h4 class="text-white mb-3">Registration</h4>
-						<p>Registration for both the pre-conference programme and the main conference will be possible on Saturday and Sunday at the Faculty of Communication Sciences. Also, for the main conference people can register at the Auditorio de Galicia during the Opening Reception on Sunday evening.
+						<p>TBD
 						</p>
 
 						<h4 class="text-white mb-3">Services</h4>
@@ -605,18 +605,13 @@
 							<ul>
 								<li>Lunch provided on location (included in registration)</li>
 								<li>Coffee and refreshments provided during coffee breaks</li>
-								<li>Very limited options for buying food and drink outside of official break times</li>
 							</ul>
 						</p>
 
 						<h4 class="text-white mb-3">Opening Reception</h4>
 						<p>
 							<ul>
-								<li>Time: Sunday, starting at 19:00 (doors open at 18:30)</li>
-								<li>Location: <a class="text-white mb-3" href="https://maps.app.goo.gl/GGe8LWgZoLwGFsc97">Auditorio de Galicia</a> (5-minute walk)</li>
-								<li>Audience: participants registered for the <b>main conference</b> only
-</li>
-								<li>Food and drinks available, but not a full dinner</li>
+								<li>TBD</li>
 							</ul>
 						</p>
 						
@@ -624,9 +619,9 @@
 				</div><!--//col-->
 				<div class="col-12 col-xl-3 col-lg-4 offset-lg-1 position-relative h-100 mt-5 mt-lg-0">
 					<div class="figures-holder">
-						<div class="figure figure-1"><img class="shadow" src="assets/images/venue/venue-1.jpg" alt=""></div>
-						<div class="figure figure-2"><img class="shadow" src="assets/images/venue/venue-2.jpg" alt=""></div>
-						<div class="figure figure-3"><img class="shadow" src="assets/images/venue/venue-3.jpg" alt=""></div>
+						<div class="figure figure-1"><img class="shadow" src="assets/images/venue/venue-1.png" alt=""></div>
+						<div class="figure figure-2"><img class="shadow" src="assets/images/venue/venue-2.png" alt=""></div>
+						<div class="figure figure-3"><img class="shadow" src="assets/images/venue/venue-3.png" alt=""></div>
 					</div><!--//figures-holder-->
 				</div><!--//col-->
 			</div><!--//row-->
@@ -636,16 +631,12 @@
 	<section id="sponsors-section" class="sponsors-section section">
 		<div class="container">
 			<h3 class="section-heading text-center mb-3">Sponsors &amp; Partners</h3>
-			<div class="section-intro text-center single-col-max mx-auto mb-5">Thanks to the sponsors who are already supporting ECAI2024!</div>
+			<div class="section-intro text-center single-col-max mx-auto mb-5">Thanks to the sponsors who are already supporting ECAI2025!</div>
 			<div class="row logos justify-content-center">
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/santander.png" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/usc-logo-1.png" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/Outlook-CiTIUS-removebg-preview.png" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/gsi.png" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/aurai.png" alt=""></div>
-				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="assets/images/logos/aepia.png" alt=""></div>
+				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="https://ecai2025.org/wp-content/uploads/2023/09/patrocinio1-300x77.png" alt=""></div>
+				<div class="logo-item col-6 col-md-4 col-lg-2"><img src="https://ecai2025.org/wp-content/uploads/2023/09/patrocinio2-300x77.png" alt=""></div>
 			</div><!--//row-->
-			<div class="sponsors-cta text-center pt-5"><a class="btn-primary btn btn-lg" href="#">Become A Sponsor</a></div>
+			<div class="sponsors-cta text-center pt-5"><a class="btn-primary btn btn-lg" href="https://ecai2025.org/sponsorship-opportunity/">Become A Sponsor</a></div>
 		</div><!--//container-->
 	</section><!--//sponsors-section-->
 
